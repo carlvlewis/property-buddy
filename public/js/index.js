@@ -57,17 +57,37 @@ function geolocate() {
         center: geolocation,
         radius: position.coords.accuracy
       });
-      autocomplete.setBounds(circle.getBounds());
+      //autocomplete.setBounds(circle.getBounds());
     });
   }
 }
 
-function go() {
+function getSpotFax() {
   if (navigator.geolocation) {
     $("#autocomplete").attr("placeholder", "Fetching location...");
     navigator.geolocation.getCurrentPosition(function(position) {
       var pos = [position.coords.latitude, position.coords.longitude];
       document.location.href = "/search/" + pos.join(',');
+    });
+  }
+}
+
+function getSpotSafety() {
+  if (navigator.geolocation) {
+    $("#autocomplete").attr("placeholder", "Fetching location...");
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var pos = [position.coords.latitude, position.coords.longitude];
+      document.location.href = "/search/safety/" + pos.join(',');
+    });
+  }
+}
+
+function getSpotPrices() {
+  if (navigator.geolocation) {
+    $("#autocomplete").attr("placeholder", "Fetching location...");
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var pos = [position.coords.latitude, position.coords.longitude];
+      document.location.href = "/search/prices/" + pos.join(',');
     });
   }
 }

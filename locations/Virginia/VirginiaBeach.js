@@ -1,12 +1,16 @@
 var VirginiaBeach = {
 
   boundary: "https://gismaps.vbgov.com/arcgis/rest/services/Basemaps/Administrative_Boundaries/MapServer/0/",
-  neighborhoods: "https://gismaps.vbgov.com/arcgis/rest/services/Basemaps/PropertyInformation_VBgov/MapServer/13/",
   council: "https://gismaps.vbgov.com/arcgis/rest/services/Basemaps/VotingDistricts/MapServer/2/",
-
+  neighborhoods: "https://gismaps.vbgov.com/arcgis/rest/services/Basemaps/PropertyInformation_VBgov/MapServer/13/",
+  shelters: "https://gismaps.vbgov.com/arcgis/rest/services/Public_Safety/Emergency_Preparedness/MapServer/0/",
+  subdivisions: "https://gismaps.vbgov.com/arcgis/rest/services/Basemaps/PropertyInformation_VBgov/MapServer/23/",
+  zipCodes: "https://gismaps.vbgov.com/arcgis/rest/services/Basemaps/Administrative_Boundaries/MapServer/1/",
+  
   property: {
     AICUZ: "https://gismaps.vbgov.com/arcgis/rest/services/Basemaps/AICUZ/MapServer/3/",
-    sales: "https://data.vbgov.com/resource/p3zb-bkwc.json"
+    sales: "https://data.vbgov.com/resource/p3zb-bkwc.json",
+    code_enforcement: "https://data.vbgov.com/resource/s5fx-f3pf.json"
   },
 
   fire: {
@@ -26,6 +30,7 @@ var VirginiaBeach = {
 
   police: {
     calls: "https://data.vbgov.com/resource/rqn2-9am9.json",
+    crashes: "https://data.vbgov.com/resource/mbi3-8v8n.json",
     incidents: "https://data.vbgov.com/resource/r37t-tt64.json",
     precincts: "https://gismaps.vbgov.com/arcgis/rest/services/Basemaps/Administrative_Boundaries/MapServer/8/",
     zones: "https://gismaps.vbgov.com/arcgis/rest/services/Basemaps/Administrative_Boundaries/MapServer/9/"
